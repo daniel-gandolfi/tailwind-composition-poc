@@ -1,0 +1,4 @@
+@tailwind utilities;
+a {
+    @apply underline decoration-black decoration-0;
+}

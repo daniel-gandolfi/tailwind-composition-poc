@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply bg-misty-blue;
+    @apply text-black;
+}
+a {
+    @apply text-gray;
+}
+a:hover {
+    @apply font-bold;
+}
+a:focus {
+    @apply outline-2 outline-gunmetal-gray outline-dotted;
+}
+a:active, a:visited {
+    @apply text-gunmetal-gray
+}
