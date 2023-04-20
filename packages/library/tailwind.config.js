@@ -13,11 +13,10 @@ module.exports = {
             xxl: '2560px',
         },
         colors: {
-          //https://www.canva.com/colors/color-palettes/frozen-berries/
-          "misty-blue":'#B0B7C0',
-          'black': '#171710',
-          'gray': '#707370',
-          'gunmetal-gray': '#595E60',
+          primary: "hsl(var(--primary) / <alpha-value>)",
+          primaryLight: "hsl(var(--primaryLight) / <alpha-value>)",
+          secondary: "hsl(var(--secondary) / <alpha-value>)",
+          secondaryLight: "hsl(var(--secondaryLight) / <alpha-value>)"
         },
         fontFamily: {
           montserrat: ['Montserrat', 'sans-serif'],

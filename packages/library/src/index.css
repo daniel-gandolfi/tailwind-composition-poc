@@ -1,20 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root {
+    --primary: 209 60% 30%;
+    --primaryLight: 208 97% 93%;
+    --secondary: 76 79% 22%;
+    --secondaryLight: 73 52% 40%;
+    @media (prefers-color-scheme: dark) {
+        --primary: 284 15% 60%;
+        --primaryLight:329 40% 8%;
+        --secondary: 128 44% 60%;
+        --secondaryLight:145 93% 30%;
+    }
+}
+:root.dark {
+    --primary: 284 15% 60%;
+    --primaryLight:329 40% 8%;
+    --secondary: 128 44% 60%;
+    --secondaryLight:145 93% 30%;
+}
 html {
-    @apply bg-misty-blue;
-    @apply text-black;
+    @apply bg-primaryLight;
+    @apply text-primary;
 }
 a {
-    @apply text-gray;
+    @apply text-secondaryLight;
 }
 a:hover {
     @apply font-bold;
 }
 a:focus {
-    @apply outline-2 outline-gunmetal-gray outline-dotted;
+    @apply outline-2 outline-secondary outline-dotted;
 }
 a:active, a:visited {
-    @apply text-gunmetal-gray
+    @apply text-secondary
 }

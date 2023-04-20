@@ -7,7 +7,7 @@ const Badge = dynamic(() => import("@daniel-gandolfi/library").then(x => x.Badge
 export default function Home() {
   return (
     <main className="grid grid-cols-12	 min-h-screen p-24 ">
-      <div className="flex  flex-col items-center justify-between col-span-9">
+      <div className="flex  flex-col items-center justify-between col-span-9 max-h-screen">
         <h1 className="text-6xl">This is a test</h1>
         <Badge className="w-12 h-12">0</Badge>
         <a href="#">This is a link</a>
