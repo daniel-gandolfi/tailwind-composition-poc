@@ -8,7 +8,7 @@ My goals are
 
 This is just a no-frills tecnical project so pork-arounds are welcome
 
-NOTES: 
+# NOTES
 ## No preflight = min preflight
 
 Docs: https://tailwindcss.com/docs/preflight#disabling-preflight
@@ -115,3 +115,12 @@ These are the included rules, (island output )
     --tw-backdrop-sepia:  
 }
 ```
+
+## declaring components
+Docs: https://tailwindcss.com/docs/adding-custom-styles#adding-component-classes
+
+Docs says to avoid creating tailwind components (TBF they are right): https://tailwindcss.com/docs/reusing-styles 
+
+BUT if you want to be careful that tailwind won't remove components from the output, they'll be in the "common" bundle forever (see library output & site useless button)
+
+In short with react you'd be better off creating a custom REACT component, creating a css component might be usefull to create an extremely common class which can't be used in a tag (maybe a :after triangle if your site is full of that ?)

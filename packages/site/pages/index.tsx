@@ -10,6 +10,9 @@ export default function Home() {
       <div className="flex  flex-col items-center justify-between col-span-9 max-h-screen">
         <h1 className="text-6xl">This is a <span className="text-secondaryLight">test</span></h1>
         <Badge className="w-12 h-12">0</Badge>
+        <button className="btn-primary p-3 text-white">
+          Useless btn (tailwind components test)
+        </button>
         <a href="#">This is a link</a>
         <b className="text-asdasd">
           A colorful test&nbsp;
