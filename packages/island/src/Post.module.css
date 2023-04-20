@@ -1,3 +1,4 @@
 .post {
-    height: 5em;
+    outline: 1px salmon solid;
+    composes: h-[5em] from global;
 }

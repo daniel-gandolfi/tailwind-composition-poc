@@ -44,6 +44,11 @@ export function LatestPosts() {
     }) 
 
     return <div>
-        {postInfo.posts.map(post => {return  <Post className={"mt-2"} key={post.id} loading={postInfo.loading} title={post.title} body={post.body} />})}
+        {postInfo.posts.map(post => {return  <React.Fragment key={post.id}>
+            <Post loading={postInfo.loading} title={post.title} body={post.body} />
+            {/* testing tailwind "custom" classes dedup */}
+            <div className="h-[2em]" />
+        </React.Fragment>
+        })}
     </div>
 }
