@@ -7,7 +7,7 @@ export function Badge({
 }: PropsWithChildren<{
     className: string
 }>) {
-    return <div className={"bg-misty-blue text-black rounded-full grid place-items-center border-black border shadow-md " + className}>
+    return <div className={"bg-secondaryLight font-bold text-gray-50 rounded-full grid place-items-center border-secondary border shadow-md " + className}>
         {children}
     </div>
 }
